@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<table id="table" width="500" height="250" align="left">
+    <tr align="center">
+        <th bgcolor="#6CB03A">工号</th>
+        <th bgcolor="#6CB03A">姓名</th>
+        <th bgcolor="#6CB03A">从属班组</th>
+        <th bgcolor="#6CB03A">从属部门</th>
+        <th bgcolor="#6CB03A">出勤状态</th>
+    </tr>
+    {% for worker in worker_list %}
+        <tr>
+            <th bgcolor="#6CB03A">{{ worker.id_worker }}</th>
+            <th bgcolor="#6CB03A">{{ worker.name_worker }}</th>
+            <th bgcolor="#6CB03A">{{ worker.team_id }}</th>
+            <th bgcolor="#6CB03A">{{ worker.department_worker }}</th>
+            <th bgcolor="#6CB03A">{{ worker.attendence_state }}</th>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+
+
+
+
+</html>
